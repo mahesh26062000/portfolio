@@ -1,0 +1,222 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000034;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.iconBar{
+    color: white;
+    font-size: 30px;
+}
+
+#rocket{
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    transform: rotate(20deg);
+    animation: rocketAnim 4s linear infinite;
+    z-index: 10;
+}
+
+@keyframes rocketAnim {
+
+    100%{transform: translate(45vw, -160px);}
+}
+
+.navbarBrand{
+margin-left:5%;
+}
+
+.header{
+    position: relative;
+}
+
+.navbarDiv{
+    background-color: #000034;
+    margin-right: 50px;
+}
+
+.nav-link{
+    color: white
+}
+
+.nav-item{
+    padding: 15px;
+}
+
+.homeRow{
+    padding: 5%;
+    color: white;
+}
+
+
+.role{
+    color:aqua;
+}
+
+h1,h2,h3,h4,h5, p{
+    margin: 0;
+    color: white;
+}
+
+p{
+    line-height: 1.7em;
+}
+
+.profileImg{
+    margin-left: 15%;
+    /* border: 12px solid skyblue; */
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px skyblue;
+
+}
+
+#home{
+    margin: 0 5% 0 5%;
+}
+
+.homeCol1{
+    padding: 5%;
+}
+
+#skills{
+    padding: 5% 0 5% 0;
+}
+
+.skillsRow{
+    padding: 10% 5% 10% 5%;
+}
+
+.outer{
+    height: 160px;
+    width: 160px;
+    /* box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255,255,255,0.7); */
+    border-radius: 50%;
+    padding: 20px;
+    margin: auto;
+}
+
+.inner{
+    height: 120px;
+    width: 120px;
+    /* box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), 
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+    color: white;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 436;
+    stroke-dashoffset: 436;
+}
+
+.AngularCircle{
+    animation: skillAngular 2s linear forwards;
+}
+
+.HTMLCircle{
+    animation: skillHTML 2s linear forwards;
+}
+
+.CSSCircle{
+    animation: skillCSS 2s linear forwards;
+}
+
+.JSCircle{
+    animation: skillJS 2s linear forwards;
+}
+
+.svgDiv{
+   position: absolute;
+    margin-top: 0;
+}
+
+@keyframes skillAngular {
+    100%{
+        stroke-dashoffset: 87;     /* 436 is full size formula is (436 - 436 * 0.65(percent)) */
+    }
+}
+
+@keyframes skillHTML {
+    100%{
+        stroke-dashoffset: 22;     /* 436 is full size formula is (436 - 436 * 0.65(percent)) */
+    }
+}
+
+@keyframes skillCSS {
+    100%{
+        stroke-dashoffset: 65;     /* 436 is full size formula is (436 - 436 * 0.65(percent)) */
+    }
+}
+
+@keyframes skillJS {
+    100%{
+        stroke-dashoffset: 109;     /* 436 is full size formula is (436 - 436 * 0.65(percent)) */
+    }
+}
+
+.skillName{
+    text-align: center;
+    padding: 20%;
+}
+
+.about{
+    margin: 0 5% 0 5%;
+}
+
+.aboutRow{
+    width:100%;
+    padding: 0% 0 0% 0;
+}
+
+.aboutCol-1{
+    padding: 5%;
+}
+
+.aboutCol-2{
+    padding:5%;
+}
+
+.aboutImg{
+    position: relative;
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.aboutP{
+    margin-top: 4%;
+}
+
+label{
+    color: white;
+}
+
+
+.contact{
+    padding-top: 5%;
+}
+
+.contactRow{
+    padding: 10% 15% 10% 15%;
+}
+
+.buttonCol{
+   margin-right: 0px;
+   float: right;
+}

@@ -8,6 +8,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+@media screen and (min-width: 400px) {
+    .aboutImg{
+        width: 100%;
+    }
+
 .iconBar{
     color: white;
     font-size: 30px;
@@ -221,9 +226,6 @@ label{
    float: right;
 }
 
-@media screen and (min-width: 400px) {
-    .aboutImg{
-        width: 100%;
-    }
+
 
 }
